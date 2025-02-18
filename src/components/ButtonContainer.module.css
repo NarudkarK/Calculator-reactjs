@@ -1,0 +1,49 @@
+/* Dark Theme - ButtonContainer.module.css */
+
+.buttonsConstainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  gap: 10px; /* Space between buttons */
+  padding: 20px; /* Padding around the container */
+  background-color: #0d1117; /* Deep black-blue background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.button {
+  background-color: #1a1d24; /* Dark button background */
+  color: #d1d9e6; /* Light bluish-gray text */
+  border: 2px solid #29427a; /* Dark border */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 1.5rem; /* Large button text */
+  padding: 15px 0; /* Vertical padding for better button size */
+  cursor: pointer; /* Indicate clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4a6da7; /* Soft blue hover effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.button:active {
+  background-color: #2c2f36; /* Darker color on click */
+  transform: translateY(1px); /* Press-down effect */
+}
+
+/* Special button styling (e.g., operators and clear) */
+.button:nth-child(4n) {
+  background-color: #2b3b5c; /* Distinct color for operators */
+}
+
+.button:nth-child(12) {
+  /* Equals button */
+  background-color: #4a6da7; /* Highlight for equals */
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .button {
+    font-size: 1.2rem; /* Smaller text on small screens */
+    padding: 10px 0; /* Adjust padding */
+  }
+}

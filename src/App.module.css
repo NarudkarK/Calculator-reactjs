@@ -1,0 +1,39 @@
+/* Dark Theme - App.module.css */
+
+.calculater {
+    border: 2px solid #eff1f7; /* Dark border */
+    width: 250px; /* Slightly wider for better UI */
+    border-radius: 10px; /* Smoother edges */
+    background-color: #1a1d24; /* Dark blue-black background */
+    padding: 20px; /* Internal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: #d1d9e6; /* Light bluish-gray text */
+    overflow: hidden; /* Prevent input overflow */
+}
+
+.app {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #1a6fed; /* Deep black-blue background */
+}
+
+/* Hover effect for calculator */
+.calculater:hover {
+    border-color: #4a6da7; /* Subtle blue border on hover */
+}
+
+.heading{
+    color: #4a6da7;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .calculater {
+        width: 90%; /* More flexible on smaller screens */
+        padding: 15px;
+    }
+}
